@@ -1,0 +1,81 @@
+body
+{
+   
+    background-image: url("./images/lithHarbour.jpg");
+    
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: rgba(20, 186, 241, 0.884);
+}
+
+a:hover
+{
+    color: deepskyblue;
+}
+
+a:active
+{
+    color: rgba(15, 125, 161, 0.507);
+}
+/*For Main Navigstion*/
+
+/*test*/
+nav
+{
+    position: relative;    
+}
+
+/*Make them all horizontal*/
+nav ul#mainnav
+{
+    display: flex;
+  
+    
+
+}
+
+/*Space the anchor container**/
+nav ul#mainnav li
+{
+    margin: 10px;
+    padding: 0px 25px 0px 25px;
+    
+}
+/*For the dropdown*/
+/*Trying to remove indent*/
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.dropdown
+{
+    position: absolute;
+}
+
+ul.dropdown li
+{
+    background-color: brown;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
