@@ -18,6 +18,7 @@ a:visited
 a:hover
 {
     color: deepskyblue;
+    
 }
 
 a:active
@@ -26,80 +27,73 @@ a:active
 }
 /*For Main Navigstion*/
 
-/*test*/
-header
-{
-    border: solid yellow;
-}
-
-nav
-{
-   
-    border: solid orange;
-}
 
 /*Make them all horizontal*/
 nav ul#mainnav
 {
     display: flex;
-    border: solid pink;
-    
-    
-  
-    
-
+   
 }
 
 /*Space the anchor container**/
-nav ul#mainnav li
+nav ul#mainnav > li
 {
-    position: relative;
+    
+    /*The reason it starts to misalign is that I wrote my selectors in a way such that 
+    in applied to drop down list as well when I padded
+    SideNote: content box  */
     /*margin: 10px;
     padding: 0px 25px 0px 25px;*/
     width: 130px;
-    border: solid green;
-    
-  
-  
-    
+    font-size: 23px;
+    height: 25px;
+    padding: 20px;
+
 }
 
-nav ul#mainnav li a:hover
-{
-    background-color: aqua;
-}
+
 
 /*Make dropdown appear*/
 nav ul#mainnav li:hover ul.dropdown
 {
     display: block;
-    
+ 
 }
+
+/*Just testing: for if I want to change submenus font size*/
+/*nav ul#mainnav li:hover ul.dropdown li
+{
+    font-size: 20px;
+    text-align: center;
+ 
+}*/
 
 
 /*For the dropdown*/
 /*Trying to remove indent*/
 ul
 {
+    /*Lists naturally have padding to them so this resets them to zero*/
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
+/*Hide Dropdown and remove from flow*/
 ul.dropdown
 {
+    /*Actaully I do not need postion absolute in this case*/
+    /*Absolute really only matters if im going to use things such aas left: right: top etc
+    if not it really has no bearing, it will align itself to the nearest postioned elment or the body
+    by default but without any offsets it wont do squat */
     position: absolute;
-    border: solid blue;
     display: none;
+    border: solid black;
+  
   
 }
 
 
-ul.dropdown li
-{
-    background-color: brown;
-   
-}
+
 
 
 
