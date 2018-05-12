@@ -32,6 +32,8 @@ a:active
 nav ul#mainnav
 {
     display: flex;
+    flex-wrap: wrap;
+     
    
 }
 
@@ -39,7 +41,7 @@ nav ul#mainnav
 nav ul#mainnav > li
 {
     
-    /*The reason it starts to misalign is that I wrote my selectors in a way such that 
+    /*The reason it starts to misa;lign is that I wrote my selectors in a way such that 
     in applied to drop down list as well when I padded
     SideNote: content box  */
     /*margin: 10px;
@@ -47,7 +49,9 @@ nav ul#mainnav > li
     width: 130px;
     font-size: 23px;
     height: 25px;
-    padding: 20px;
+    margin: 20px;
+    
+    
 
 }
 
@@ -59,6 +63,12 @@ nav ul#mainnav li:hover ul.dropdown
     display: block;
  
 }
+
+
+
+
+
+
 
 /*Just testing: for if I want to change submenus font size*/
 /*nav ul#mainnav li:hover ul.dropdown li
@@ -81,17 +91,33 @@ ul
 /*Hide Dropdown and remove from flow*/
 ul.dropdown
 {
-    /*Actaully I do not need postion absolute in this case*/
-    /*Absolute really only matters if im going to use things such aas left: right: top etc
+
+    /*Absolute really only matters if im going to use things such as left: right: top etc
     if not it really has no bearing, it will align itself to the nearest postioned elment or the body
     by default but without any offsets it wont do squat */
+
+
     position: absolute;
     display: none;
-    border: solid black;
-  
+    background-color: rgba(187, 187, 219, 0.5);
+
+}
+
+ul.dropdown li
+{
+    margin: 20px;
   
 }
 
+/*Will pad the anchor in the list*/
+/*Will still keep it aligned as we are padding within the element  *!* */
+ul.dropdown a
+{
+    padding: 15px;
+  
+    
+   
+}
 
 
 
