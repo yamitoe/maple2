@@ -28,30 +28,24 @@ a:active
 /*For Main Navigstion*/
 
 
+
+
 /*Make them all horizontal*/
 nav ul#mainnav
 {
     display: flex;
     flex-wrap: wrap;
-     
    
 }
+
 
 /*Space the anchor container**/
 nav ul#mainnav > li
 {
-    
-    /*The reason it starts to misa;lign is that I wrote my selectors in a way such that 
-    in applied to drop down list as well when I padded
-    SideNote: content box  */
-    /*margin: 10px;
-    padding: 0px 25px 0px 25px;*/
     width: 130px;
     font-size: 23px;
-    height: 25px;
     margin: 20px;
-    
-    
+ 
 
 }
 
@@ -100,23 +94,39 @@ ul.dropdown
     position: absolute;
     display: none;
     background-color: rgba(187, 187, 219, 0.5);
+    border-top: solid 2px rgba(110, 110, 150, 0.9);
 
-}
-
-ul.dropdown li
-{
-    margin: 20px;
-  
 }
 
 /*Will pad the anchor in the list*/
 /*Will still keep it aligned as we are padding within the element  *!* */
+ul.dropdown li
+{
+    border-bottom: solid 1px rgba(140, 140, 190, 0.9);
+    
+}
+
 ul.dropdown a
 {
-    padding: 15px;
+    /*Area of padding is clickable*/
+    display: block; /*Display:Flex also achieves same thing but wraps inside vs out elements*/
+    padding: 25px;
   
     
    
+}
+
+/*For When I want to add a background home icon*/
+.bounding-box 
+{
+  
+  background-image: url(/images/maplestory-2-icon.png);
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+
+  
+
 }
 
 
