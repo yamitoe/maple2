@@ -1,7 +1,7 @@
 body
 {
    
-    background-image: url("./images/lithHarbour.jpg");
+    background-image: url("../images/lithHarbour.jpg");
     
 }
 
@@ -129,7 +129,7 @@ ul.dropdown a
 .bounding-box 
 {
   
-  background-image: url(/images/maplestory-2-icon.png);
+  background-image: url(../images/maplestory-2-icon.png);
   background-repeat: no-repeat;
   background-size: center;
   background-position: center;

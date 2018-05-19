@@ -1,0 +1,107 @@
+/*For body*/
+hr {
+    border-color: black;
+}
+/*overall*/
+#bodytop
+{
+    display: flex;
+}
+
+.container-body
+{
+    display: flex;
+    background-color: rgba(120, 207, 219, 0.9);
+}
+
+.container-body p
+{
+    overflow-wrap: break-word;
+   
+}
+
+.container-body h3
+{
+    /*max to specefiy how big tag can get and overflow for when text breaks outta tag*/
+    overflow-wrap: break-word;
+}
+
+/*Specefic*/
+
+#events
+{
+    /*background-color: rgba(120, 207, 219, 0.9);*/
+   /* border: solid black;*/
+   
+}
+
+#events > h2
+{
+    margin-left: 10px;
+    background-color: rgba(120, 207, 219, 0.9);
+}
+
+#events article
+{
+    border: solid black;
+}
+
+
+#events .container-body > span
+{
+    margin: 10px;
+}
+
+#events .container-body h2
+{
+    max-width: 200px;
+}
+
+
+/*2*/
+
+
+#updates article
+{
+   /* display: flex;*/
+    margin: 8px;
+    border: solid black;
+   
+    max-width: 300px;
+    height: 200px;
+    max-height: 250px;
+
+}
+
+#updates h2
+{
+    margin: 8px;
+    background-color: rgba(120, 207, 219, 0.3);
+}
+
+#updates p
+{
+    width: 150px;
+    margin: 8px;
+    border-bottom: 1px solid black;
+ 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
