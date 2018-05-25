@@ -44,18 +44,18 @@ nav ul#mainnav > li
 
 nav ul#mainnav li a
 {
-    color: rgb(0, 0, 238);
+    color: hsl(240, 100%, 46.7%);
 }
 
 nav ul#mainnav li a:hover
 {
-    color: deepskyblue;
+    color: hsl(195, 100%, 50%);
     
 }
 
 nav ul#mainnav li a:active
 {
-    color: rgba(15, 125, 161, 0.507);
+    color: hsl(191, 83%, 34.5%);
 }
 
 
@@ -131,7 +131,7 @@ ul.dropdown a
   
   background-image: url(../images/maplestory-2-icon.png);
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: contain;
   background-position: center;
 
   

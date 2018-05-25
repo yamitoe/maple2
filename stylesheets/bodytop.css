@@ -1,3 +1,7 @@
+/*Background-clip very useful if I want to fill the background
+like an inline(content-area), block(border-box !default) or via padding area
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip */
+
 /*For body*/
 hr {
     border-color: black;
@@ -6,44 +10,42 @@ hr {
 #bodytop
 {
     display: flex;
+    color: hsla(195, 80%, 20%, 0.9);
+    font-weight: 400;  
+}
+
+#bodytop h2, #bodytop h3, #bodytop strong 
+{
+    color: hsl(195, 80%, 10%);
+    font-weight: 600;
+}
+
+
+/*container for bodytop events*/
+.container
+{
+    border: solid black; 
 }
 
 .container-body
 {
     display: flex;
-    background-color: rgba(120, 207, 219, 0.9);
-}
-
-.container-body p
-{
-    overflow-wrap: break-word;
+    background-color: hsla(195, 80%, 73.5%, 0.9);
    
 }
 
-.container-body h3
+.container-body p, .container-body h3
 {
-    /*max to specefiy how big tag can get and overflow for when text breaks outta tag*/
     overflow-wrap: break-word;
+   
 }
 
 /*Specefic*/
-
-#events
-{
-    /*background-color: rgba(120, 207, 219, 0.9);*/
-   /* border: solid black;*/
-   
-}
-
 #events > h2
 {
     margin-left: 10px;
-    background-color: rgba(120, 207, 219, 0.9);
-}
-
-#events article
-{
-    border: solid black;
+   
+  
 }
 
 
@@ -76,7 +78,7 @@ hr {
 #updates h2
 {
     margin: 8px;
-    background-color: rgba(120, 207, 219, 0.3);
+ 
 }
 
 #updates p
