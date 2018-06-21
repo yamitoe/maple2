@@ -27,6 +27,11 @@ nav ul#mainnav
 {
     display: flex;
     flex-wrap: wrap;
+
+    /*Lists naturally have padding to them so this resets them to zero*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
    
    
 }
@@ -83,14 +88,6 @@ nav ul#mainnav li:hover ul.dropdown
 
 
 /*For the dropdown*/
-/*Trying to remove indent*/
-ul
-{
-    /*Lists naturally have padding to them so this resets them to zero*/
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 /*Hide Dropdown and remove from flow*/
 ul.dropdown
 {
@@ -104,6 +101,11 @@ ul.dropdown
     display: none;
     background-color: rgba(187, 187, 219, 0.5);
     border-top: solid 2px rgba(110, 110, 150, 0.9);
+
+    /*Lists naturally have padding to them so this resets them to zero*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
 }
 

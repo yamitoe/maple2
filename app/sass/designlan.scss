@@ -1,0 +1,34 @@
+%equal-height-horz
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%list-reset
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hiragana 
+{
+    .outerlist
+    {
+        @extend %equal-height-horz;
+        @extend %list-reset;
+        > li
+        {
+            margin: 10px;
+        }
+    }
+
+    .innerlist
+    {
+        @extend %list-reset;
+
+    }
+
+
+}
+

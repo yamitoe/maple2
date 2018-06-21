@@ -1,0 +1,16 @@
+#hiragana .outerlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hiragana .innerlist, #hiragana .outerlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hiragana .outerlist > li {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=stylesheets/designlan.css.map */
